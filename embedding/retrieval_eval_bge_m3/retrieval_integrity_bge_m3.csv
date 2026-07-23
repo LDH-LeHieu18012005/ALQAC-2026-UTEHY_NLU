@@ -1,0 +1,10 @@
+﻿check,n_errors,examples
+missing_case_ids,0,[]
+extra_case_ids,0,[]
+wrong_topk_length,0,[]
+duplicate_keys_within_case,0,[]
+bad_ranks,0,[]
+non_descending_scores,0,[]
+corpus_key_mismatches,0,[]
+aid_mismatches,0,[]
+content_mismatches,0,[]

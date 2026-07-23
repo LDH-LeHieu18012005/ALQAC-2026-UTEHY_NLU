@@ -1,0 +1,60 @@
+{
+  "benchmark_version": "v1",
+  "retriever": "BAAI/bge-m3",
+  "matching_policy": "exact law version + article number",
+  "n_cases": 50,
+  "top_k": 10,
+  "total_gold_article_citations": 675,
+  "gold_article_citations_available_in_corpus": 529,
+  "corpus_coverage": 0.7837037037037037,
+  "metrics": {
+    "1": {
+      "Hits": 5,
+      "Precision": 0.1,
+      "Recall macro (corpus-conditioned)": 0.008932400932400933,
+      "Recall micro (corpus-conditioned)": 0.00945179584120983,
+      "Recall macro (end-to-end)": 0.008932400932400933,
+      "Recall micro (end-to-end)": 0.007407407407407408,
+      "Hit Rate": 0.1,
+      "MRR": 0.1,
+      "nDCG": 0.1,
+      "MAP": 0.008932400932400933
+    },
+    "3": {
+      "Hits": 9,
+      "Precision": 0.06,
+      "Recall macro (corpus-conditioned)": 0.013868675442204855,
+      "Recall micro (corpus-conditioned)": 0.017013232514177693,
+      "Recall macro (end-to-end)": 0.013868675442204855,
+      "Recall micro (end-to-end)": 0.013333333333333334,
+      "Hit Rate": 0.14,
+      "MRR": 0.12,
+      "nDCG": 0.06815672356136539,
+      "MAP": 0.011818838840897666
+    },
+    "5": {
+      "Hits": 13,
+      "Precision": 0.052,
+      "Recall macro (corpus-conditioned)": 0.021911003484532898,
+      "Recall micro (corpus-conditioned)": 0.024574669187145556,
+      "Recall macro (end-to-end)": 0.020203876189170304,
+      "Recall micro (end-to-end)": 0.01925925925925926,
+      "Hit Rate": 0.2,
+      "MRR": 0.134,
+      "nDCG": 0.06034961231641696,
+      "MAP": 0.014292383814442637
+    },
+    "10": {
+      "Hits": 26,
+      "Precision": 0.052,
+      "Recall macro (corpus-conditioned)": 0.04045670571831562,
+      "Recall micro (corpus-conditioned)": 0.04914933837429111,
+      "Recall macro (end-to-end)": 0.03842762317250808,
+      "Recall micro (end-to-end)": 0.03851851851851852,
+      "Hit Rate": 0.38,
+      "MRR": 0.1576031746031746,
+      "nDCG": 0.060424154290660004,
+      "MAP": 0.017385549382582407
+    }
+  }
+}

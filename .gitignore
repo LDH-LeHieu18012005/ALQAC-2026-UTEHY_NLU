@@ -1,0 +1,23 @@
+# --- Secrets: KHONG BAO GIO commit ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Moi truong ao / cache ---
+.venv-modal/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# --- Output sinh ra khi chay ---
+outputs_alqac_e2e/
+*.tmp
+*.json.tmp
+
+# --- OS ---
+Thumbs.db
+.DS_Store
