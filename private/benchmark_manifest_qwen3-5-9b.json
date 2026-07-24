@@ -1,0 +1,66 @@
+{
+  "benchmark_version": "v12_legal_pado_divisible_types_balanced_judge_private",
+  "benchmark_protocol": "legal_pado_thinking_divisible_mapper_3vote_derived_verdict",
+  "pipeline_version": "legal-pado-v15-private-submission",
+  "pipeline_contract_hash": "8e6b858d3266a137f6dcfc6d7f97cad41779d2363dcb194b4746ea41ecfe4253",
+  "pipeline_stages": [
+    "issue_mapper",
+    "legal_judge_3vote",
+    "direct_fallback"
+  ],
+  "model_name": "Qwen3.5-9B",
+  "model_id": "Qwen/Qwen3.5-9B",
+  "model_revision": "main",
+  "generation": {
+    "engine": "vllm-modal",
+    "structured_outputs": false,
+    "disable_any_whitespace": false,
+    "enable_thinking": true,
+    "thinking_by_stage": {
+      "issue_mapper": false,
+      "legal_judge_vote": true,
+      "direct_fallback": false
+    },
+    "sampling": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0.0,
+      "repetition_penalty": 1.0
+    },
+    "judge_votes": 3,
+    "max_new_tokens_by_stage": {
+      "issue_mapper": 4096,
+      "legal_judge_vote": 16384,
+      "direct_fallback": 2048
+    }
+  },
+  "model_context_limit": 40960,
+  "dtype": "bfloat16",
+  "full_gpu_no_quantization": true,
+  "dataset_path": "/root/ALQAC_private_test.json",
+  "dataset_sha256": "9db83cf98ade7d19df52c60145830bebcc192e064ec830bcd285cefbfddf0252",
+  "num_cases": 60,
+  "labels": [
+    "A_WIN",
+    "B_WIN",
+    "PARTIAL_A_WIN",
+    "PARTIAL_B_WIN"
+  ],
+  "retrieval_source": "file:retrieval_top14_private.json",
+  "retrieval_path": "/root/retrieval_top14_private.json",
+  "retrieval_sha256": "cf87fa97c71863807bd5535193064b6284d387ea56a9187d3d2b2b17458fcebd",
+  "top_k_laws": 14,
+  "retrieval_signature": "3cdf4fc5911f74d2e82e482be1fd947de710527356e32656bfd726c55db96cd0",
+  "max_input_tokens": 24000,
+  "max_article_chars": 6000,
+  "eval_seeds": [
+    2026
+  ],
+  "coverage_policy": "mapper_fallback + direct_fallback + explicit hard fallback always emit a label",
+  "prompt_hashes": {
+    "issue_mapper": "a27ed2e7b7bb8d7a8b945f48babeb8ec9a4bfba81572edb3358ceef2fa2f751e",
+    "legal_judge": "8c5ff0fa5bb30088d5b4aeadcabb1f077c7ce97ea5ffa01ba7b8ba3b93122abe",
+    "direct_fallback": "2cb3bf437a981fa33e2d8b526ca35508cc69b6fd7b293839e8faef8d3ada1867"
+  }
+}
