@@ -55,10 +55,10 @@ Stage 3 formula — `s = Σ(wᵢ · aᵢ) / Σwᵢ`, where `w` is the claim's im
 | Baseline | Qwen2.5-7B-Instruct | 0.30 | 0.1813 | 0.2367 | 0.1840 |
 | Baseline | DeepSeek-R1-Distill-Llama-8B | 0.46 | 0.5944 | 0.4396 | 0.4358 |
 | Baseline | Qwen3.5-9B | _0.52_ | _0.3988_ | _0.4477_ | _0.4165_ |
-| 3 call | Qwen3-4B | 0.32 | 0.2953 | 0.2740 | 0.2695 |
-| 3 call | Qwen2.5-7B-Instruct | 0.30 | 0.1833 | 0.2122 | 0.1946 |
-| 3 call | DeepSeek-R1-Distill-Llama-8B | 0.40 | 0.4636 | 0.3115 | 0.3175 |
-| **3 call** | **Qwen3.5-9B**| **0.58** | **0.5793** | **0.6340** | **0.5995** |
+| CCWD | Qwen3-4B | 0.32 | 0.2953 | 0.2740 | 0.2695 |
+| CCWD | Qwen2.5-7B-Instruct | 0.30 | 0.1833 | 0.2122 | 0.1946 |
+| CCWD | DeepSeek-R1-Distill-Llama-8B | 0.40 | 0.4636 | 0.3115 | 0.3175 |
+| **CCWD** | **Qwen3.5-9B**| **0.58** | **0.5793** | **0.6340** | **0.5995** |
 
 ### Retrieval `bge-m3`
 
@@ -68,10 +68,10 @@ Stage 3 formula — `s = Σ(wᵢ · aᵢ) / Σwᵢ`, where `w` is the claim's im
 | Baseline | Qwen2.5-7B-Instruct | 0.32 | 0.1687 | 0.2155 | 0.1621 |
 | Baseline | DeepSeek-R1-Distill-Llama-8B | 0.40 | 0.3134 | 0.3515 | 0.3255 |
 | Baseline | **Qwen3.5-9B** | **0.58** | **0.4435** | **0.5015** | **0.4574** |
-| 3 call | Qwen3-4B | 0.36 | 0.3199 | 0.2704 | 0.2671 |
-| 3 call | Qwen2.5-7B-Instruct | 0.36 | 0.2569 | 0.2786 | 0.2210 |
-| 3 call | DeepSeek-R1-Distill-Llama-8B | 0.50 | 0.4007 | 0.4079 | 0.3984 |
-| 3 call | Qwen3.5-9B | _0.50_ | _0.5268_ | _0.4762_ | _0.4426_ |
+| CCWD | Qwen3-4B | 0.36 | 0.3199 | 0.2704 | 0.2671 |
+| CCWD | Qwen2.5-7B-Instruct | 0.36 | 0.2569 | 0.2786 | 0.2210 |
+| CCWD | DeepSeek-R1-Distill-Llama-8B | 0.50 | 0.4007 | 0.4079 | 0.3984 |
+| CCWD | Qwen3.5-9B | _0.50_ | _0.5268_ | _0.4762_ | _0.4426_ |
 
 ## 3. Results — Only query
 
@@ -83,10 +83,10 @@ Stage 3 formula — `s = Σ(wᵢ · aᵢ) / Σwᵢ`, where `w` is the claim's im
 | Baseline | Qwen2.5-7B-Instruct | 0.32 | 0.1720 | 0.2204 | 0.1812 |
 | Baseline | **DeepSeek-R1-Distill-Llama-8B** | **0.42** | **0.3244** | **0.3508** | **0.3320** |
 | Baseline | Qwen3.5-9B | 0.32 | 0.2402 | 0.2564 | 0.2366 |
-| 3 call | Qwen3-4B | 0.40 | 0.2150 | 0.2755 | 0.2265 |
-| 3 call | Qwen2.5-7B-Instruct | _0.40_ | _0.2696_ | _0.3123_ | _0.2769_ |
-| 3 call | DeepSeek-R1-Distill-Llama-8B | 0.38 | 0.1922 | 0.2648 | 0.2188 |
-| 3 call | Qwen3.5-9B | 0.34 | 0.1810 | 0.2355 | 0.1718 |
+| CCWD | Qwen3-4B | 0.40 | 0.2150 | 0.2755 | 0.2265 |
+| CCWD | Qwen2.5-7B-Instruct | _0.40_ | _0.2696_ | _0.3123_ | _0.2769_ |
+| CCWD | DeepSeek-R1-Distill-Llama-8B | 0.38 | 0.1922 | 0.2648 | 0.2188 |
+| CCWD | Qwen3.5-9B | 0.34 | 0.1810 | 0.2355 | 0.1718 |
 
 ### Retrieval `B_hyb. legal_query` (hybrid dense+BM25)
 
@@ -96,10 +96,10 @@ Stage 3 formula — `s = Σ(wᵢ · aᵢ) / Σwᵢ`, where `w` is the claim's im
 | Baseline | Qwen2.5-7B-Instruct | 0.36 | 0.1964 | 0.2442 | 0.1882 |
 | Baseline | DeepSeek-R1-Distill-Llama-8B | 0.28 | 0.2139 | 0.2227 | 0.2170 |
 | Baseline | Qwen3.5-9B | 0.28 | 0.2356 | 0.2276 | 0.2144 |
-| **3 call** | **Qwen3-4B** | **0.44** | **0.2713** | **0.2993** | **0.2361** |
-| 3 call | Qwen2.5-7B-Instruct | 0.38 | 0.2406 | 0.2967 | 0.2526 |
-| 3 call | DeepSeek-R1-Distill-Llama-8B | 0.34 | 0.3648 | 0.2798 | 0.2787 |
-| 3 call | Qwen3.5-9B | _0.40_ | _0.1866_ | _0.2750_ | _0.1846_ |
+| **CCWD** | **Qwen3-4B** | **0.44** | **0.2713** | **0.2993** | **0.2361** |
+| CCWD | Qwen2.5-7B-Instruct | 0.38 | 0.2406 | 0.2967 | 0.2526 |
+| CCWD | DeepSeek-R1-Distill-Llama-8B | 0.34 | 0.3648 | 0.2798 | 0.2787 |
+| CCWD | Qwen3.5-9B | _0.40_ | _0.1866_ | _0.2750_ | _0.1846_ |
 
 ## 4. Statute retrieval quality (%)
 
