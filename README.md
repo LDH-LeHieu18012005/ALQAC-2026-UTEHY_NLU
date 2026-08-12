@@ -54,7 +54,7 @@ Stage 3 formula — `s = Σ(wᵢ · aᵢ) / Σwᵢ`, where `w` is the claim's im
 | Baseline | Qwen3-4B | 0.32 | 0.2556 | 0.2658 | 0.2602 |
 | Baseline | Qwen2.5-7B-Instruct | 0.30 | 0.1813 | 0.2367 | 0.1840 |
 | Baseline | DeepSeek-R1-Distill-Llama-8B | 0.46 | 0.5944 | 0.4396 | 0.4358 |
-| Baseline | Qwen3.5-9B | _0.52_ | _0.5306_ | _0.3988_ | _0.4165_ |
+| Baseline | Qwen3.5-9B | _0.52_ | _0.3988_ | _0.4477_ | _0.4165_ |
 | 3 call | Qwen3-4B | 0.32 | 0.2953 | 0.2740 | 0.2695 |
 | 3 call | Qwen2.5-7B-Instruct | 0.30 | 0.1833 | 0.2122 | 0.1946 |
 | 3 call | DeepSeek-R1-Distill-Llama-8B | 0.40 | 0.4636 | 0.3115 | 0.3175 |
